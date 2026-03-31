@@ -33,7 +33,7 @@ class WadFusionMusicHandler : StaticEventHandler
 		if ( mapName.Left(3) == "e5m" )
 		{
 			// play the mp3 soundtrack
-			let sigil = CVar.FindCVar("wf_sigil_shreds")
+			let sigil = CVar.FindCVar("wf_sigil_shreds");
 			if ( sigil && sigil.GetBool() ) )
 			{
 				S_ChangeMusic( mapMusicShreds );
@@ -49,7 +49,7 @@ class WadFusionMusicHandler : StaticEventHandler
 		if ( mapName.Left(3) == "e6m" )
 		{
 			// play the mp3 soundtrack
-			let sigil2 = CVar.FindCVar("wf_sigil2_shreds")
+			let sigil2 = CVar.FindCVar("wf_sigil2_shreds");
 			if ( sigil2 && sigil2.GetBool() ) )
 			{
 				S_ChangeMusic( mapMusicShreds );
