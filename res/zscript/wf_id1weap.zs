@@ -393,7 +393,7 @@ class Id1WeaponHandler : EventHandler
 {
 	override void CheckReplacement (ReplaceEvent e)
 	{
-		int weapSwap = CVar.FindCVar("wf_id1_weapswap").GetInt();
+		let weapSwap = CVar.FindCVar("wf_id1_weapswap").GetInt();
 		string mapName = level.MapName.MakeLower();
 		if ( ( weapSwap == 1 && mapName.Left(3) == "lr_" ) || weapSwap >= 2 )
 		{
